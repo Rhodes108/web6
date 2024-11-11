@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desayunos Rápidos - Contacto</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        nav { 
+            background-color: #ffcc00; 
+            padding: 1em; 
+            text-align: center; 
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            color: #fff; 
+        }
+        .contenido-contacto {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .informacion-contacto {
+            padding: 20px;
+        }
+        .info-item {
+            margin-bottom: 20px;
+        }
+        .info-item i {
+            color: #ffcc00;
+            margin-right: 10px;
+        }
+        .formulario-contacto {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .campo-formulario {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+        .redes-sociales {
+            margin-top: 30px;
+        }
+        .red-social {
+            display: inline-block;
+            margin-right: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .mapa {
+            margin-top: 20px;
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .contenido-contacto {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="servicio.html">Servicio</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="contenido-contacto">
+        <div class="informacion-contacto">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes alguna pregunta? ¡Nos encantaría escucharte!</p>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Ubicación</h3>
+                <p>Calle Principal 123, Ciudad</p>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <h3>Teléfono</h3>
+                <p>+1 234 567 890</p>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@desayunosrapidos.com</p>
+            </div>
+
+            <div class="redes-sociales">
+                <h3>Síguenos en redes sociales</h3>
+                <a href="#" class="red-social">Facebook</a>
+                <a href="#" class="red-social">Instagram</a>
+                <a href="#" class="red-social">Twitter</a>
+        <div class="formulario-contacto">
+            <h2>Envíanos un mensaje</h2>
+            <form action="#" method="POST">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+    <!-- Link para los íconos de Font Awesome -->
+</body>
+</html>

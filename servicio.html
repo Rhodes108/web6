@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desayunos Rápidos - Servicios</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        nav { 
+            background-color: #ffcc00; 
+            padding: 1em; 
+            text-align: center; 
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            color: #fff; 
+        }
+        .contenido-servicios {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .servicio-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .servicio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .servicio-card h3 {
+            color: #ff9900;
+        }
+        .precio {
+            font-size: 1.5em;
+            color: #2ecc71;
+            margin: 15px 0;
+        }
+        .boton-servicio {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .boton-servicio:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="servicio.html">Servicio</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="contenido-servicios">
+        <h1>Nuestros Servicios</h1>
+        <p>Descubre todo lo que podemos ofrecerte para mejorar tus desayunos</p>
+
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <h3>Plan Básico de Recetas</h3>
+                <p>Acceso a recetas básicas de desayunos</p>
+                <ul>
+                    <li>Guías nutricionales básicas</li>
+                    <li>Acceso a la comunidad</li>
+                </ul>
+                <div class="precio">$9.99/mes</div>
+                <a href="#" class="boton-servicio">Suscribirse</a>
+            </div>
+
+            <div class="servicio-card">
+                <h3>Plan Premium</h3>
+                <p>Todo el contenido exclusivo</p>
+                <ul>
+                    <li>Videos tutoriales</li>
+                    <li>Asesoría nutricional</li>
+                    <li>Planificador semanal</li>
+                </ul>
+                <div class="precio">$19.99/mes</div>
+                <a href="#" class="boton-servicio">Suscribirse</a>
+            </div>
+
+            <div class="servicio-card">
+                <h3>Consultoría Personalizada</h3>
+                <p>Atención individual</p>
+                <ul>
+                    <li>Plan personalizado</li>
+                    <li>Seguimiento semanal</li>
+                    <li>Ajustes según objetivos</li>
+                    <li>Soporte prioritario</li>
+                </ul>
+                <div class="precio">$49.99/mes</div>
+                <a href="#" class="boton-servicio">Contactar</a>
+            </div>
+        </div>
+
+        <section style="margin-top: 40px;">
+            <h2>Servicios Adicionales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <h3>Talleres Online</h3>
+                    <p>Aprende en directo con nuestros expertos</p>
+                    <div class="precio">Desde $29.99</div>
+                    <a href="#" class="boton-servicio">Más Información</a>
+                </div>
+
+                <div class="servicio-card">
+                    <h3>E-books de Recetas</h3>
+                    <p>Colecciones temáticas de recetas</p>
+                    <div class="precio">Desde $14.99</div>
+                    <a href="#" class="boton-servicio">Ver Catálogo</a>
+                </div>
+
+                <div class="servicio-card">
+                    <h3>Mentoría Grupal</h3>
+                    <p>Sesiones grupales de aprendizaje</p>
+                    <div class="precio">Desde $39.99</div>
+                    <a href="#" class="boton-servicio">Inscribirse</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
